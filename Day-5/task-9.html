@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Data Meaning</title>
+</head>
+<body>
+
+    <h1><u>User Information Form</u></h1>
+
+    <form action="#" method="POST">
+        <!-- The value will be sent as: username -->
+        <label>Name:</label><br>
+        <input type="text" name="username"><br><br> 
+
+        <!-- The value will be sent as: user_email -->
+        <label>Email:</label><br>
+        <input type="email" name="user_email"><br><br>
+
+        <!-- The value will be sent as: user_password -->
+        <label>Password:</label><br>
+        <input type="password" name="user_password"><br><br>
+
+        <!-- The selected value (male/female) will be sent as: gender -->
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+        <!-- The checked options will be sent as: hobbies -->
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" value="Reading"> Reading
+        <input type="checkbox" name="hobbies" value="Sports"> Sports
+        <input type="checkbox" name="hobbies" value="Music"> Music
+        <input type="checkbox" name="hobbies" value="Travel"> Travel
+        <br><br>
+
+        <!-- The selected city will be sent as: city -->
+        <label>City:</label><br>
+        <select name="city">
+            <option value="Select City">Select City</option>
+            <option value="Nashik">Nashik</option>
+            <option value="Pune">Pune</option>
+            <option value="Mumbai">Mumbai</option>
+        </select><br><br>
+
+        <!-- The form data will be submitted to the server -->
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

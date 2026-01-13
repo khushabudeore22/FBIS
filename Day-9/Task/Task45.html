@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Focus & Hover Effects</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+
+        /* Form container */
+        .form-box {
+            width: 350px;
+            margin: auto;
+            background-color: #deb7b7;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-box h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        /* Input fields */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+
+            /* Smooth transition */
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect */
+        input:hover {
+            border-color: #999;
+        }
+
+        /* Focus effect */
+        input:focus {
+            outline: none; /* Remove default outline */
+            border-color: #4CAF50;
+            box-shadow: 0 0 6px rgba(76, 175, 80, 0.5);
+        }
+
+        /* Button */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            box-shadow: 6px 6px 15px rgba(85, 84, 84, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>User Form</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Name">
+            <input type="email" placeholder="Enter Email">
+            <input type="password" placeholder="Enter Password">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

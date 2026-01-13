@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Repeat Function</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        /* Grid container */
+        .grid-container {
+            display: grid;                        
+            grid-template-columns: repeat(3, 1fr); /* Clean & readable */
+            gap: 20px;
+            background-color: #acebac;
+            padding: 20px;
+        }
+
+        /* Grid items */
+        .grid-item {
+            background-color: #e661bc;
+            color: white;
+            padding: 30px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">Column 1</div>
+        <div class="grid-item">Column 2</div>
+        <div class="grid-item">Column 3</div>
+    </div>
+
+</body>
+</html>

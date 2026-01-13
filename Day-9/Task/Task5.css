@@ -1,0 +1,35 @@
+.html-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ec1313;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #8ae1b0;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.html-info{
+    font-size: 16px;
+    color: #666666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.css-title{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 0, 248);
+    background-color: rgb(235, 176, 155);
+    text-align: center;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px grey;
+}
+
+.css-info{
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}

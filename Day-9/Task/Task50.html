@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Card Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Section heading */
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Card container */
+        .card-section {
+            display: flex;              /* Enable Flexbox */
+            gap: 25px;                  /* Space between cards */
+            justify-content: center;    /* Center cards */
+            flex-wrap: wrap;            /* Responsive wrapping */
+        }
+
+        /* Individual card */
+        .card {
+            background-color: #ffffff;
+            width: 280px;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+
+            /* Hover animation */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect */
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Card title */
+        .card h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+
+        /* Card text */
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Button */
+        .card button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #388E3C;
+        }
+
+        /* 📱 Mobile responsiveness */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px;
+            }
+
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Our Services</h2>
+    <div class="card-section">
+
+        <div class="card">
+            <h3>Web Design</h3>
+            <p>Modern and responsive designs using HTML, CSS, Flexbox, and Grid.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Clean and scalable websites suitable for real-world projects.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <h3>UI/UX</h3>
+            <p>User-friendly layouts with smooth animations and interactions.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>

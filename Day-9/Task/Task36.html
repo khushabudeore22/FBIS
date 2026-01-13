@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Span Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 30px;
+        }
+
+        /* Grid container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);  /* 4 columns */
+            grid-template-rows: repeat(3, 120px);   /* 3 rows */
+            gap: 15px;
+            background-color: #dbaaaa;
+            padding: 20px;
+        }
+
+        /* Common grid item styling */
+        .item {
+            background-color: #639fc4;
+            color: white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Item spanning columns */
+        .item1 {
+            grid-column: 1 / 3;   /* Span from column 1 to 3 (2 columns) */
+            background-color: #7f96a9;
+        }
+
+        /* Item spanning rows */
+        .item2 {
+            grid-row: 1 / 3;      /* Span from row 1 to 3 (2 rows) */
+            background-color: #a0927e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item item1">Column Span</div>
+        <div class="item item2">Row Span</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+        <div class="item">Item</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Flexbox Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Main layout container */
+        .layout {
+            display: flex;              /* Enable Flexbox */
+            flex-wrap: wrap;            /* Allow wrapping for responsiveness */
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            flex: 1 1 200px;            /* Grow, shrink, base width */
+            background-color: #555;
+            color: white;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        .nav {
+            display: block;
+            color: white;
+            padding: 10px 0;
+            text-decoration: none;
+        }
+
+        /* Main content */
+        .content {
+            flex: 3 1 400px;            /* Takes more space than sidebar */
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* Cards container */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        /* Individual card */
+        .card {
+            flex: 1 1 200px;            /* Responsive cards */
+            background-color: #f0a3a3;
+            padding: 20px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Responsive Flexbox Layout</h2>
+    </header>
+
+    <div class="layout">
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <a href="#" class="nav">Home</a>
+            <a href="#" class="nav">About</a>
+            <a href="#" class="nav">Services</a>
+            <a href="#" class="nav">Contact</a>
+        </aside>
+
+        <main class="content">
+            <h3>Main Content</h3>
+            <p>This layout adjusts automatically on all screen sizes using Flexbox only.</p>
+
+            <div class="cards">
+                <div class="card">Card 1</div>
+                <div class="card">Card 2</div>
+                <div class="card">Card 3</div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        © 2026 Flexbox Layout
+    </footer>
+
+</body>
+</html>

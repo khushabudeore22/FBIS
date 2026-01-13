@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Relative Position Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 40px;
+        }
+
+        /* Box with relative positioning */
+        .box {
+            width: 200px;
+            height: 120px;
+            background-color: #bdbdf1;
+            color: rgb(23, 22, 22);
+            position: relative;     /* Enables movement */
+            top: 20px;              /* Moves down from original position */
+            left: 30px;             /* Moves right from original position */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            border: 2px solid #333;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        Relative Box
+    </div>
+
+</body>
+</html>

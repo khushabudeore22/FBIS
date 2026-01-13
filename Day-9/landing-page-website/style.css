@@ -1,0 +1,214 @@
+/* =========================
+   GLOBAL RESET & FONT
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== FOOTER FIX (IMPORTANT) ===== */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7fa;
+    color: #2c2c2c;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    background: #0a2540;
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+nav a {
+    color: #dbeafe;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: #38bdf8;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero {
+    min-height: 85vh;
+    background: linear-gradient(to right, #0a2540, #0f3d63);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+.section {
+    flex: 1;               /* FOOTER FIX */
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+    color: #0a2540;
+}
+
+.section p {
+    max-width: 750px;
+    margin: auto;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: #38bdf8;
+    color: #0a2540;
+}
+
+.secondary {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #ffffff;
+    padding: 30px;
+    width: 280px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(10, 37, 64, 0.12);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(10, 37, 64, 0.2);
+}
+
+.card h3 {
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+.card.highlight {
+    border-top: 4px solid #38bdf8;
+}
+
+/* =========================
+   PRICING
+========================= */
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin: 15px 0;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form {
+    max-width: 420px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #38bdf8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 0;      /* FOOTER FIX */
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+}

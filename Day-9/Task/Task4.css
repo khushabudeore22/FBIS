@@ -1,0 +1,20 @@
+/* Using Name */
+.heading {
+    font-size: 30px;
+    text-align: center;
+    color: darkorange;
+    border: 2px solid #000000;
+}
+/* Using Hex */
+.subheading {
+    font-size: 25px;
+    text-align: center;
+    color: #008080;
+    background-color: beige;
+}
+/* Using RGB */
+.paragraph {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgb(209, 25, 151);
+}

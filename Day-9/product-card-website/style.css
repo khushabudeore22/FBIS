@@ -1,0 +1,189 @@
+/*GLOBAL RESET & FOOTER FIX */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #fff0f6; /* soft pink background */
+    color: #4a2c3a;
+}
+
+/*NAVBAR*/
+.navbar {
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    padding: 18px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #000000;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+nav a {
+    color: #000000;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: #000000;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/*SECTION*/
+.section {
+    flex: 1;
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #d6336c;
+}
+
+.section p {
+    margin: 10px auto 30px;
+    color: #6d435a;
+}
+
+/*PRODUCT GRID (CSS GRID)*/
+.product-grid {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    gap: 30px;
+}
+
+/*PRODUCT CARD*/
+.product-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 22px;
+    box-shadow: 0 18px 40px rgba(214, 51, 108, 0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    width: 100%;
+}
+
+.product-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 28px 60px rgba(214, 51, 108, 0.35);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    border-radius: 18px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    color: #d6336c;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #f06595;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.desc {
+    font-size: 14px;
+    color: #7a4a64;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.btn {
+    margin-top: 12px;
+    background: linear-gradient(to right, #f783ac, #ffb3c6);
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 12px 30px rgba(240, 98, 146, 0.5);
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #f3b6c2;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #f06595;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #ff9a9e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .section {
+        padding: 40px 20px;
+    }
+}

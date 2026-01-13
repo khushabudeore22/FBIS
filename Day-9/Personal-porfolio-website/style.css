@@ -1,0 +1,369 @@
+/* =========================
+   GLOBAL RESET & FONT
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #111;
+}
+
+.logo {
+    color: #ffd369;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-logo{
+    width:40px;
+    height:40px;
+    margin-right:10px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+.navbar nav a {
+    color: white;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #ffd369;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+}
+
+.primary {
+    background: #ffd369;
+    color: black;
+}
+
+.secondary {
+    border: 2px solid white;
+    color: white;
+}
+
+/* =========================
+   HERO (HOME PAGE)
+========================= */
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: linear-gradient(to right, #00adb5, #393e46);
+    color: white;
+    animation: fadeIn 2s ease;
+}
+
+.hero-text h1 {
+    font-size: 46px;
+    line-height: 1.2;
+}
+
+.hero-text span {
+    color: #ffd369;
+}
+
+.hero-text p {
+    margin: 15px 0 25px;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img img {
+    width: 320px;
+    border-radius: 50%;
+    border: 5px solid #ffd369;
+}
+
+/* Glow effect */
+.glow-circle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: #ffd369;
+    filter: blur(120px);
+    z-index: -1;
+    top: 60px;
+    left: 60px;
+}
+
+/* =========================
+   HIGHLIGHTS (HOME)
+========================= */
+.highlights {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px;
+    background: white;
+}
+
+.highlight-card {
+    background: linear-gradient(to right, #00adb5, #393e46);
+    color: white;
+    width: 220px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.highlight-card:hover {
+    transform: translateY(-12px);
+}
+
+.highlight-card h2 {
+    font-size: 36px;
+    color: #ffd369;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+.about-section {
+    min-height: 85vh;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    max-width: 1100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   SKILLS PAGE (GRID)
+========================= */
+.skills-section {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.skills-section h1 {
+    font-size: 36px;
+}
+
+.skills-intro {
+    margin: 15px 0 40px;
+    color: #555;
+}
+
+.skills-grid {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.skill-card h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   PROJECTS PAGE (FLEXBOX)
+========================= */
+.projects-section {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.projects-section h1 {
+    font-size: 36px;
+}
+
+.projects-intro {
+    margin: 15px 0 40px;
+    color: #555;
+}
+
+.projects-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+.contact-section {
+    padding: 70px 60px;
+    text-align: center;
+}
+
+.contact-intro {
+    margin: 15px 0 40px;
+    color: #555;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info,
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.contact-info h3 {
+    color: #00adb5;
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00adb5;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

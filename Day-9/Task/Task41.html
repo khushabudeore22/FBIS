@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Hover Animation</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Card container */
+        .card-container {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Card design */
+        .card {
+            width: 260px;
+            background-color: #f5d3d3;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            text-align: center;
+
+            /* Animation setup */
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        /* Hover animation */
+        .card:hover {
+            transform: translateY(-10px); /* Lift effect */
+            box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+        }
+
+        /* Card heading */
+        .card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Card text */
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Design</h3>
+            <p>Clean and modern UI design improves user experience.</p>
+        </div>
+
+        <div class="card">
+            <h3>Development</h3>
+            <p>Responsive layouts built using HTML, CSS, Flexbox, and Grid.</p>
+        </div>
+
+        <div class="card">
+            <h3>Performance</h3>
+            <p>Smooth animations make interfaces feel professional.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

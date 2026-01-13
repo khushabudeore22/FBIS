@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Absolute Position Inside Parent</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 40px;
+        }
+
+        /* Parent container */
+        .parent {
+            width: 350px;
+            height: 220px;
+            background-color: #e5e393;
+            position: relative;
+            /* Reference for absolute child */
+            padding: 15px;
+            border: 2px solid #333;
+        }
+
+        /* Child box */
+        .child {
+            width: 120px;
+            height: 80px;
+            background-color: #f4a2ef;
+            color: rgb(35, 34, 34);
+            position: absolute;
+            /* Positioned inside parent */
+            bottom: 20px;
+            /* Distance from bottom of parent */
+            right: 20px;
+            /* Distance from right of parent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        Parent Division
+        <div class="child">
+            Child Division
+        </div>
+    </div>
+</body>
+
+</html>

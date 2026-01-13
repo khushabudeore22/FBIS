@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Property Example</title>
+
+    <style>
+        /* Div styled as block (default behavior) */
+        .block-box {
+            display: block;                /* Block element */
+            background-color: #9dea9f;
+            color: rgb(0, 0, 0);
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        /* Span styled as inline (default behavior) */
+        .inline-text {
+            display: inline;               /* Inline element */
+            color: rgb(161, 26, 26);
+            text-decoration: underline burlywood;
+            padding: 5px;
+        }
+
+        /* Span converted to block element */
+        .span-block {
+            display: block;                /* Span behaving like block */
+            background-color: #a5ccec;
+            color: rgb(2, 2, 2);
+            padding: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block-box">
+        This is a div (block element)
+    </div>
+
+    <p>
+        This is a <span class="inline-text">span (inline element)</span> inside a paragraph.
+    </p>
+
+    <span class="span-block">
+        This span is displayed as block
+    </span>
+
+</body>
+</html>

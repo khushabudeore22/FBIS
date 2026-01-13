@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scale Hover Button</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #edb2b6;
+            padding: 60px;
+            text-align: center;
+        }
+
+        /* Button base style */
+        .btn {
+            padding: 14px 30px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            border-radius: 50px;
+            box-shadow: 20 6px 15px rgba(0,0,0,0.1);
+
+            /* Smooth animation */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover scale effect */
+        .btn:hover {
+            transform: scale(1.1); /* Scale up */
+            box-shadow: 8 8px 20px rgba(0,0,0,0.25);
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn">Get Started</button>
+
+</body>
+</html>

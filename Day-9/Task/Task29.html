@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Card Design</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .heading {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        /* Card container */
+        .card-container {
+            display: flex;                  /* Enable Flexbox */
+            gap: 20px;                      /* Space between cards */
+            justify-content: center;        /* Center cards horizontally */
+            flex-wrap: wrap;                /* Wrap on small screens */
+        }
+
+        /* Individual card */
+        .card {
+            width: 250px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* Card heading */
+        .card h3 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        /* Card text */
+        .card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Button inside card */
+        .card button {
+            margin-top: 15px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .card button:hover {
+            background-color: #43a047;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="heading">Indian cricketer</h1>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>Rohit Sharma</h3>
+            <img src="./../Task/images/rohit.png" alt="rohit-sharma" style="width:100%; height: 250px; border-radius: 8px;">
+            <p>Rohit Sharma is a celebrated Indian cricketer, nicknamed "Hitman," known for his explosive batting, especially in limited-overs formats, holding records for most ODI double centuries and most T20I centuries, and for leading India to the 2024 T20 World Cup title.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <h3>Shubman Gill</h3>
+            <img src="./../Task/images/shubman-gil.png" alt="shubman-gill" style="width:100%; border-radius: 8px;">
+            <p>Shubman Gill is a prolific young Indian cricketer, a right-handed top-order batsman known for his elegance and scoring ability across Test, ODI, and T20 formats, captaining India and the IPL's Gujarat Titans</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <h3>Virat Kohali</h3>
+            <img src="./../Task/images/virat-kohali.png" alt="virat-kohali" style="width:100%; height: 250px; border-radius: 8px;">
+            <p>Virat Kohli (born Nov 5, 1988) is an Indian cricket superstar, a record-breaking right-handed top-order batsman, former Indian captain across all formats, known as the "Chase Master</p>
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

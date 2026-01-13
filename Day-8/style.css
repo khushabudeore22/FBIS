@@ -1,0 +1,17 @@
+b{
+    font-weight: bold;
+    color: blue;
+    background-color:orange
+}
+
+.bold-text {
+    font-weight: bold;
+    color: purple;
+    background-color: yellow;
+}
+
+#Italic-text {
+    font-style: italic;
+    color: red;
+    background-color: lightblue;
+}

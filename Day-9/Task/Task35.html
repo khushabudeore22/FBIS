@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Image Gallery</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Gallery container */
+        .gallery {
+            display: grid;                              /* Enable Grid */
+            grid-template-columns: repeat(3, 1fr);     /* 3 columns */
+            gap: 15px;                                 /* Space between images */
+        }
+
+        /* Gallery images */
+        .gallery img {
+            width: 100%;                                /* Full column width */
+            height: 500px;
+            object-fit: cover;                          /* Crop image nicely */
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Image Gallery</h2>
+
+    <div class="gallery">
+        <img src="./../Task/images/macaw.jpg" alt="Nature">
+        <img src="./../Task/images/mahadev.png" alt="god-image">
+        <img src="./../Task/images/rohit.png" alt="cricket-image">
+        <img src="./../Task/images/shubman-gil.png" alt="cricket-image">
+        <img src="./../Task/images/virat-kohali.png" alt="cricket-image">
+        <img src="./../Task/images/tasty-tasty-image.jpeg" alt="tasty-tasty-image">
+    </div>
+
+</body>
+</html>

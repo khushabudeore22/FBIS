@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Styled Placeholder Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        /* Form container */
+        .form-box {
+            width: 350px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Input fields */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Placeholder styling */
+        input::placeholder {
+            color: #999;          /* Placeholder color */
+            font-style: italic;   /* Italic text */
+            font-size: 13px;      /* Slightly smaller */
+            color: #4CAF50;
+        }
+
+        /* Focus effect */
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-box">
+        <h2>Login Form</h2>
+
+        <form>
+            <input type="text" placeholder="Enter your name">
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter your password">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+</body>
+</html>

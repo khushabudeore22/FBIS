@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1aa73;
+            padding: 60px;
+            text-align: center;
+        }
+
+        /* Animated box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #9acee7;
+            margin: auto;
+
+            /* Animation properties */
+            animation-name: moveBox;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        /* Keyframes definition */
+        @keyframes moveBox {
+            from {
+                transform: translateX(0px);
+            }
+            to {
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Simple CSS Animation</h2>
+    <div class="box">box</div>
+
+</body>
+</html>

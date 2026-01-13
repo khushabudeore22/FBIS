@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Navigation Bar</title>
+
+    <style>
+        /* Reset default spacing */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        nav {
+            background-color: #4b4a4a;
+            padding: 15px 30px;
+        }
+
+        /* Navigation list */
+        nav ul {
+            list-style: none;            /* Remove bullets */
+            display: flex;               /* Enable Flexbox */
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation items */
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        /* Navigation links */
+        nav ul li a {
+            color: white;
+            text-decoration: none;       /* Remove underline */
+            font-size: 16px;
+        }
+
+        /* Hover effect */
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
