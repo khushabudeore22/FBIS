@@ -202,12 +202,13 @@
 # list.remove(10)
 # print(list)
 
-# 3. Remove all occurrences of a given integer from a list. 
-list=[10,20,30,40,50,60]
-result=list.remove()
-for i in list[:]:
-    list.remove()
-print(list)
+# # 3. Remove all occurrences of a given integer from a list. 
+# list=[10,20,30,40,50,60]
+# result=list.remove()
+# for i in list[:]:
+#     list.remove()
+# print(list)
+
 
 # reverse() 
 # 1. Reverse an integer list using reverse(). 
