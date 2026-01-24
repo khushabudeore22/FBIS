@@ -76,7 +76,22 @@
 # else:
 #     print("Not Palindrome")
 
-# Write a program to check whether a number is an Armstrong number using a while loop.
+# num = int(input("Enter a number: "))
+num=int(input("Enter a number: "))
+temp = num
+sum = 0
+
+while temp > 0:
+    digit = temp % 10
+    sum = sum + (digit ** 3)
+    temp = temp // 10
+
+if sum == num:
+    print(num, "is an Armstrong number")
+else:
+    print(num, "is not an Armstrong number")
+
+
 # Write a program to find the factorial of a number using a while loop.
 # Write a program to print Fibonacci series up to n terms using a while loop.
 # Write a program to check whether a number is prime using a while loop.
