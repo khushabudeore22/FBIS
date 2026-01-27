@@ -1,4 +1,4 @@
-# <!-- Loop Assignment :-
+# <!-- Loop Assignment :---!>
 
 # Print numbers from 1 to 10 using a for loop.
 num=0
