@@ -1,0 +1,42 @@
+{% load static %}
+<html>
+<head>
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet"href="{% static 'SMSapp/css/style.css' %}">
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>This is a simple HTML page without CSS.</p>
+    <hr>
+
+    <h2>About</h2>
+    <p>HTML is used to create web pages.</p>
+
+    <h3>Features</h3>
+    <ul>
+        <li>Easy to learn</li>
+        <li>Platform independent</li>
+        <li>Works with browsers</li>
+    </ul>
+
+    <h3>Contact Form</h3>
+    <form>
+        Name:<br>
+        <input type="text"><br><br>
+
+        Email:<br>
+        <input type="email"><br><br>
+
+        Message:<br>
+        <textarea rows="4" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br><br>
+    <footer>
+        © 2026 Simple HTML Page
+    </footer>
+
+</body>
+</html>
