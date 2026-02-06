@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff7a18, #ffb347);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Login Box */
+.login-container {
+    background-color: white;
+    padding: 35px;
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ff7a18;
+}
+
+.login-container p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Input Fields */
+.input-box {
+    margin-bottom: 18px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.input-box input:focus {
+    border-color: #ff7a18;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background-color: #ff7a18;
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #e56700;
+}
+
+/* Links */
+.extra-links {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.extra-links a {
+    text-decoration: none;
+    color: #ff7a18;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}

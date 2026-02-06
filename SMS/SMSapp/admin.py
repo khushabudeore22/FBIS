@@ -1,5 +1,5 @@
 from django.contrib import admin
-from SMSapp.models import StudentData
+from SMSapp.models import logindata 
 
 # Register your models here.
-admin.site.register(StudentData)
+admin.site.register(logindata)

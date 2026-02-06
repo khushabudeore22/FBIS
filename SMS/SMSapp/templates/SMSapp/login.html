@@ -1,0 +1,38 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'SMSapp/css/login.css'%}">
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <p>Welcome back! Please login to your account</p>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="input-box">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="input-box">
+                <label>email</label>
+                <input type="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <button type="submit" class="btn">Login</button>
+
+            <div class="extra-links">
+                <a href="#">Forgot Password?</a>
+                <span> | </span>
+                <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
